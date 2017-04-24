@@ -9,9 +9,24 @@
     "16": "images/icon-16.png",
     "128": "images/icon-128.png"
   },
-  "background": {
-    "scripts": [
-      "scripts/background.js"
-    ]
-  }
+  "permissions": [
+    "tabs",
+    "https://www-kofu.jsps.go.jp/kofu1/*",
+    "https://inspirehep.net/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www-kofu.jsps.go.jp/kofu1/shinsei/logon3.do"
+      ],
+      "js": [
+        "scripts/main.js"
+      ],
+      "css": [
+        "styles/main.css"
+      ],
+      "run_at": "document_end",
+      "all_frames": false
+    }
+  ]
 }
