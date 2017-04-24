@@ -1,7 +1,7 @@
 {
   "name": "kakenspire",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Kaken-hi helper from inspire",
   "scripts": {
     "start": "npm run dev:chrome",
